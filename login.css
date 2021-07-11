@@ -1,0 +1,83 @@
+h2{
+  position: relative;
+  top: 75px;
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form {
+position: relative;
+top:75px;
+}
+
+h3{
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form #uname{
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.form #username{
+  height: 40px;
+}
+
+.form #pass{
+  position:relative;
+  top:30px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form #password{
+  height:40px;
+  position: relative;
+  top: 20px;
+}
+
+.form #login{
+  position: relative;
+  left:50px;
+  height:40px;
+  top:40px;
+  width: 250px;
+  border: thin;
+  background-color: whitesmoke;
+  text-decoration:none;
+  font-size: 15px;
+  font-color: black;
+}
+
+.form #register{
+  position: relative;
+  top: 20px;
+  font-size: 15px;
+  left: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form #forgot{
+  position: relative;
+  top: 20px;
+  font-size: 15px;
+  left: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link{
+  text-decoration: none;
+  color: green;
+  }
+
+a:hover{
+  text-decoration: underline;
+  color: red;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+

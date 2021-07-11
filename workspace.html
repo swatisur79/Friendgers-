@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Friendgers</title>
+    <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
+    <link href="workspace.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="background-color: #A4E4F4">
+  <div class="header">
+    <div id="title">
+    <h1 contenteditable="true" align="center">Diary Name</h1>
+    </div>
+    <div id="button">
+    <a href="index.html"><button> Logout </button></a>
+  </div>
+
+<div id="sidenav">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#clients">Clients</a>
+  <a href="#contact">Contact</a>
+  <button class="dropdown-btn">Dropdown
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="names">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  </div>
+<div class="main">
+    <div id="editor">
+        <p>This is some sample content.</p>
+    </div>
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
+</div>
+</body>
