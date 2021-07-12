@@ -1,41 +1,26 @@
 <!DOCTYPE>
 <html>
 <head>
-<title>friendgers</title>
-<style>
-  h1{text-align: center; font-size: 150%;}
-  body{
-    background-color: #FEC8D8;
-  }
-  ul{
-    text-align: center;
-    padding: 10px;
-    background: white;
-  }
-  li{
-    text-align: center;
-    display: inline;
-    padding: 0px 10px 0px 10px;
-    font-size: 20px
-  }
-  a{color: black;}
-
-  btn one{width: 200px; height:50px; background-color: yellow}
-</style>
+<title>Friendgers</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="homepage.css"/>
+<a href="index.html"><button id="logout"><i class="fa fa-fw fa-sign-out"></i> </button></a>
 </head>
 <body style="background-color: #B2C6DE">
-  <link rel="stylesheet" type="text/css" href="intern.css">
-  <h1>welcome to friendgers</h1>
-  <ul>
-   <li><a href="#"> about friendgers</a></li>
-   <li><a href="#">my profile</li>
-   <li><a href="#">whatever</a></li>
-  </ul>
-  
+
+  <h1>The Best Place to Leisurely Connect !</h1>
+  <div class="sidebar">
+    
+  <a href="#home"><i class="fa fa-fw fa-book"></i> My Diaries</a>
+  <a href="#services"><i class="fa fa-fw fa-user"></i> Contacts</a>
+  <a href="#home"><i class="fa fa-fw fa-search"></i>Search</a>
+  <a href="#clients"><i class="fa fa-fw fa-cog"></i> Setting</a>
+  <a href="#contact"><i class="fa fa-fw fa-paint-brush"></i> Background Color</a>
+  </div>
+
   <div class="container">
-   <a href="workspace.html"><button class="btn btn1">my friend user id</button></a>
-   <button class="btn btn2">my workspace</button>
+   <button id="btn1"><a href="workspace.html">Write to a Friend!</a></button>
+   <button id="btn2"><a href="workspace.html"> Surprise Meetup!</a></button>
   </div> 
 </body>
-
 </html>

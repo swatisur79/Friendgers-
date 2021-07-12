@@ -1,0 +1,98 @@
+/* Style the sidebar - fixed full height */
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+/* Style sidebar links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #818181;
+  display: flex;
+  height: 15%;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Style the main content */
+.container {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+h1{
+  top:75px;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  margin-left:160px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container #btn1{
+  position: relative;
+  top: 200px;
+  font-size: 15px;
+  left: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+  height:75px;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  border:thin;
+}
+
+.container #btn2{
+  position: relative;
+  top: 200px;
+  font-size: 15px;
+  left: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+  height:75px;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  border:thin;
+}
+
+.container a:link{
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  }
+
+.container a:hover{
+  background-color: #EDEADE
+}
+
+.container a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+#logout{
+  width:40px;
+  height:30px;
+  float:right;
+  background-color: whitesmoke;
+  border:thin;
+}
