@@ -1,5 +1,6 @@
 h2{
   position: relative;
+  left:20px;
   top: 75px;
   text-align: center;
   font-size: 30px;
@@ -9,22 +10,22 @@ h2{
 .form {
 position: relative;
 top:100px;
+left:40px;
 }
 
-.form #uname, #em, #ps, #cps{
+.form #uname {
 font-size: 20px;
 font-family: Arial, Helvetica, sans-serif;
 }
-.form #username, #email, #password, #cpassword{
-  height: 40px;
+.form #username{
+height: 40px;
 }
 
-.form #submit{
+.form #submit, #back{
   position: relative;
-  left:30px;
   height:40px;
   top:40px;
-  width: 250px;
+  width: 200px;
   border: thin;
   background-color: whitesmoke;
   text-decoration:none;
@@ -32,7 +33,7 @@ font-family: Arial, Helvetica, sans-serif;
   font-color: black;
 }
 
-.form #login{
+.form #invite{
   position: relative;
   top: 20px;
   font-size: 15px;

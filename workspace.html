@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Friendgers</title>
-    <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link href="workspace.css" rel="stylesheet" type="text/css" />
+	<meta charset="utf-8">
+	<title>Friendgers</title>
+	<script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js">
+	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link href="workspace.css" rel="stylesheet" type="text/css" />
 </head>
 <body style="background-color: #A4E4F4">
-  <div class="header">
-    <div id="title">
-    <h1 contenteditable="true" align="center">Diary Name</h1>
-    </div>
-    <div id="button">
-    <a href="index.html"><button> Logout </button></a>
+  <div class="sidenav">
+   <a href="#home"><i class="fa fa-fw fa-book"></i> My Diaries</a>
+  <a href="#services"><i class="fa fa-fw fa-user"></i> Contacts</a>
+  <a href="friend.html"><i class="fa fa-fw fa-search"></i>Search for mates</a>
+  <a href="#clients"><i class="fa fa-fw fa-cog"></i> Setting</a>
+  <a href="#contact"><i class="fa fa-fw fa-paint-brush"></i> Background Color</a>
   </div>
 
-<div id="sidenav">
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#clients">Clients</a>
-  <a href="#contact">Contact</a>
-  <button class="dropdown-btn">Dropdown
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div id="names">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+	<div class="header">
+		<div id="title">
+			<h1 contenteditable="true" align="center">Diary Name</h1>
+		</div>
+		<div id="button">
+			<a href="homepage.html"><button id="signout"><i class="fa fa-fw fa-sign-out"></i></button></a>
   </div>
-  </div>
+	</div>
+
 <div class="main">
     <div id="editor">
-        <p>This is some sample content.</p>
+        <p>Start typing here</p>
     </div>
     <script>
         ClassicEditor
-            .create( document.querySelector( '#editor' ) )
+              .create( document.querySelector( '#editor' ))
             .catch( error => {
+              tool
                 console.error( error );
             } );
     </script>
 </div>
 </body>
+</html>

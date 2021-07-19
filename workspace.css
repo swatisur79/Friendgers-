@@ -1,15 +1,5 @@
-
-.header #title{
-  margin-left: 160px;
-  text-align: "center";
-  display: inline-block;
-}
-.header #button{
-  float: right;
-}
-
-.header #sidenav{
-    height: 100%; /* Full-height: remove this if you want "auto" height */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 160px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
@@ -20,40 +10,51 @@
   padding-top: 20px;
 }
 
-.header #sidenav a, .dropdown-btn{
+.sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
   color: #818181;
-  display: block;
-  background: none;
-  width:100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
+  display: flex;
+  height: 15%;
 }
 
-.header #sidenav a:hover,  .dropdown-btn:hover {
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
   color: #f1f1f1;
 }
 
-/* Optional: Style the caret down icon */
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
+.header #title{
+  position:relative;
+  margin-left: 160px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header #button{
+  position: absolute;
+  top:5px;
+  right:5px;
 }
 
-@media screen and (max-height: 450px) {
-  .header #sidenav {padding-top: 15px;}
-  .header #sidenav a {font-size: 18px;}
+.header #button #signout {
+  background-color: whitesmoke;
+  border:thin;
+  height:25px;
+  width:50px;
 }
 
+/* Style page content */
 .main {
   margin-left: 160px; /* Same as the width of the sidebar */
   padding: 0px 10px;
 }
 
-
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
 
 

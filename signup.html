@@ -6,10 +6,11 @@
 </head>
 
 <body style="background-color:#EDCCB6">
+  <script type="text/javascript" src="script.js"></script>
 <center>
 <h2>Signup !</h2> 
 <div class="form">
-<form action="homepage.html" method="post">
+<form method="post">
 <table>
 <tr>
 <td id="uname">Username:</td>
@@ -41,7 +42,15 @@
 Already a member?<a href="index.html"> Login</a>
 </td>
 </table>
-<button id="submit"> <a href="homepage.html"> Submit</a></button>
+<button id="submit" onclick="getUserDetails()"> Submit</button>
+<script>
+  function getUserDetails(){
+  var uname = document.getElementById("username");
+  console.log(uname);
+  var ps = document.getElementById("password");
+  console.log(ps);
+  }
+  </script>
 </form>
 </center>
 </body>
