@@ -1,17 +1,16 @@
 function getUserDetails() {
-  alert("you clicked submit");
-  var uname = document.getElementById("username");
-  console.log(uname);
-  var ps = document.getElementById("password");
-  console.log(ps);
+  var uname = document.getElementById("username").value;
+  var ps = document.getElementById("password").value;
+  confirm(uname,ps);
 }
-function confirm(){
-    var user=document.getElementById("username").Value;
-    var pass=document.getElenmentById("password").value;
-    if(user=="admin" && pass=="user"){
-        alert("suceess")
-        return false;
-    }
-    else{}
 
+function confirm(username, password){
+    if(username=="admin" && password=="user"){
+      window.location.href="homepage.html";
+    }
+    else{
+      alert("wrong username or password");
+    }
+    return false;
 }
+
