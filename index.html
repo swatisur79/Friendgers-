@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>Friendgers</title>
-    <link href="login.css" rel="stylesheet" type="text/css" />
+	<meta charset="utf-8">
+	<title>Friendgers</title>
+	<link href="login.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body style="background-color: #957DAD">
-<script type="text/javascript" src="script.js"></script>
-<div class="heading">
-<h2>Friendgers!</h2>
-</div>
-<div class="form">
-<center>
-  <br>
-<form method="post" action="homepage.html">
+	<script type="text/javascript" src="script.js">
+	</script>
+	<div class="heading">
+		<h2>Friendgers!</h2>
+	</div>
+	<div class="form">
+		<center>
+			<br>
+<form id="form" method="post" onsubmit="return getUserDetails(event)">
 <h3>Login</h3> 
 <table>
 <tr>
@@ -34,13 +36,14 @@
 <a href="signup.html"> Sign Up</a>
 </td>
 <td id="forgot"> 
-  <a href="homepage.html"> Forgot Password?</a> </td>
+  <a href="forgotPassword.html"> Forgot Password?</a> </td>
 </tr>
 </table>
 <td>
-<button id="login"><a href="homepage.html"></a> Login</button> 
+<button id="login" onclick="getUserDetails()">Login </button> 
 </td>
 </form>
 </center>
+</div>
 </body>
 </html>

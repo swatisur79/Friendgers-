@@ -6,11 +6,17 @@ function getUserDetails() {
 
 function confirm(username, password){
     if(username=="admin" && password=="user"){
-      window.location.href="homepage.html";
-    }
+      var f=document.getElementById("form")
+       f.setAttribute('method',"post");
+       f.setAttribute('action',"homepage.html");
+      return true;
+  }
     else{
       alert("wrong username or password");
+      location.reload();
+      return false;
     }
-    return false;
 }
+
+
 

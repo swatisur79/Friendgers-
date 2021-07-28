@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Friendgers-SignUp</title>
-    <link href="signup.css" rel="stylesheet" type="text/css" />
+	<title>Friendgers-SignUp</title>
+	<link href="signup.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body style="background-color:#EDCCB6">
-  <script type="text/javascript" src="script.js"></script>
-<center>
-<h2>Signup !</h2> 
-<div class="form">
-<form method="post">
-<table>
-<tr>
-<td id="uname">Username:</td>
-<td>
-<input id="username" type="text" placeholder="Name"/>
+	<script type="text/javascript" src="signup.js">
+
+	</script>
+	<center>
+		<h2>Signup !</h2>
+		<div class="form">
+			<form id="form" method="post" onsubmit="return getDetails(event)">
+				<table>
+					<tr>
+						<td id="uname">Username:</td>
+						<td>
+							<input id="username" type="text" placeholder="Name"/>
 </td>
 </tr>
+
 <tr>
 <td id="em">Email:</td>
 <td>
@@ -38,19 +42,15 @@
 <input id="cpassword" type="password" placeholder=" Same Password as Above"/>
 </td>
 </tr>
+
 <td id="login">
 Already a member?<a href="index.html"> Login</a>
 </td>
 </table>
-<button id="submit" onclick="getUserDetails()"> Submit</button>
-<script>
-  function getUserDetails(){
-  var uname = document.getElementById("username");
-  console.log(uname);
-  var ps = document.getElementById("password");
-  console.log(ps);
-  }
-  </script>
+
+<button id="submit" onclick="getDetails()"> Create Account</button>
 </form>
+</div>
 </center>
 </body>
+</html>
